@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yojana Buddy - AI Chatbot</title>
+    <script src="{% static 'chatbot/script.js' %}" defer></script>
+    <link rel="stylesheet" href="{% static 'chatbot/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-box"></div>
+            <div class="user-info">
+                <p>Welcome Back!</p>
+                <strong>AdvikGupta12</strong>
+            </div>
+        </aside>
+    </div>
+
+        <main class="chat-main">
+            <nav class="chat-nav">
+                <button class="active">Chat</button>
+                <input type="text" placeholder="Search by keyword">
+                <button>Tools</button>
+            </nav>
+
+            
+
+            <div class="chat-window" id="chat-window">
+                <div class="message bot">
+                    <p>Hello! Ask me about schemes or tell me your details to find eligible ones.</p>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type here...">
+                <button id="sendButton">Send</button>
+            </div>
+        </main>
+    
+
+</body>
+</html>
